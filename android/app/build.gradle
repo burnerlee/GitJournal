@@ -1,0 +1,91 @@
+// SPDX-FileCopyrightText: 2019-2021 Vishesh Handa <me@vhanda.in>
+//
+// SPDX-License-Identifier: Apache-2.0
+
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('secrets/key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+if (!keystoreProperties.containsKey('keyAlias')) {
+    // to simplify local development
+    keystoreProperties['keyAlias'] = 'local'
+    keystoreProperties['keyPassword'] = 'local'
+    keystoreProperties['storeFile'] = 'local'
+    keystoreProperties['storePassword'] = 'local'
+}
+
+android {
+    compileSdkVersion flutter.compileSdkVersion
+
+    lintOptions {
+        disable 'InvalidPackage'
+        checkReleaseBuilds false
+    }
+
+    defaultConfig {
+        applicationId "io.gitjournal.gitjournal"
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+        // testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    flavorDimensions "app"
+    productFlavors {
+        prod {
+            dimension "app"
+        }
+        dev {
+            dimension "app"
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            ndk {
+                abiFilters 'arm64-v8a', 'armeabi-v7a'
+            }
+        }
+        debug {
+            ndk {
+                abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+            }
+        }
+    }
+
+    dexOptions {
+        preDexLibraries true
+        jumboMode true
+        javaMaxHeapSize "12g"
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+// Are these required?
+// dependencies {
+//     testImplementation 'junit:junit:4.12'
+//     androidTestImplementation 'androidx.test:runner:1.1.0'
+//     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+// }
