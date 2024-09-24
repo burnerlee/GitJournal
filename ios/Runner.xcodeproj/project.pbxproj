@@ -553,7 +553,7 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dashwave.gitjournal.ShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dashwave.testshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -586,7 +586,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dashwave.gitjournal.ShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dashwave.testshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -730,7 +730,7 @@
 					"$(PROJECT_DIR)/Flutter",
 					"$(PROJECT_DIR)/libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dashwave.gitjournal;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dashwave.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -771,7 +771,7 @@
 					"$(PROJECT_DIR)/Flutter",
 					"$(PROJECT_DIR)/libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dashwave.gitjournal;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dashwave.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
