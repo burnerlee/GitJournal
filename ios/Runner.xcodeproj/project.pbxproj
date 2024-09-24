@@ -271,45 +271,41 @@
 
 /* Begin PBXProject section */
 		97C146E61CF9000F007C117D /* Project object */ = {
-	attributes = {
-		LastSwiftUpdateCheck = 1130;
-		LastUpgradeCheck = 1510;
-		ORGANIZATIONNAME = "The Chromium Authors";
-		TargetAttributes = {
-			7AAD0866253F8A9F0048BC67 = {
-				CreatedOnToolsVersion = "11.3.1";
-				DevelopmentTeam = NMSWAPB8G9;
-				DevelopmentTeamName = "";
-				ProvisioningStyle = Manual;
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1510;
+				ORGANIZATIONNAME = "The Chromium Authors";
+				TargetAttributes = {
+					7AAD0866253F8A9F0048BC67 = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeamName = "";
+					};
+					97C146ED1CF9000F007C117D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeamName = "";
+						LastSwiftMigration = 1130;
+					};
+				};
 			};
-			97C146ED1CF9000F007C117D = {
-				CreatedOnToolsVersion = "7.3.1";
-				DevelopmentTeam = NMSWAPB8G9;
-				DevelopmentTeamName = "";
-				LastSwiftMigration = 1130;
-				ProvisioningStyle = Manual;
-			};
+			buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 97C146E51CF9000F007C117D;
+			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97C146ED1CF9000F007C117D /* Runner */,
+				7AAD0866253F8A9F0048BC67 /* ShareExtension */,
+			);
 		};
-	};
-	buildConfigurationList = 97C146E91CF9000F007C117D;
-	compatibilityVersion = "Xcode 3.2";
-	developmentRegion = English;
-	hasScannedForEncodings = 0;
-	isa = PBXProject;
-	knownRegions = (
-		English,
-		en,
-		Base,
-	);
-	mainGroup = 97C146E51CF9000F007C117D;
-	productRefGroup = 97C146EF1CF9000F007C117D;
-	projectDirPath = "";
-	projectRoot = "";
-	targets = (
-		97C146ED1CF9000F007C117D,
-		7AAD0866253F8A9F0048BC67,
-	);
-};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -536,39 +532,39 @@
 
 /* Begin XCBuildConfiguration section */
 		7AAD0873253F8A9F0048BC67 /* Debug */ = {
-	buildSettings = {
-		"CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION" = "YES_AGGRESSIVE";
-		"CLANG_CXX_LANGUAGE_STANDARD" = "gnu++14";
-		"CLANG_ENABLE_OBJC_WEAK" = YES;
-		"CLANG_WARN_DOCUMENTATION_COMMENTS" = YES;
-		"CLANG_WARN_UNGUARDED_AVAILABILITY" = "YES_AGGRESSIVE";
-		"CODE_SIGN_ENTITLEMENTS" = "ShareExtension/ShareExtension.entitlements";
-		"CODE_SIGN_IDENTITY" = 4b953abffcbce8171fcfb6b5b8e317797dffe18d;
-		"CODE_SIGN_STYLE" = Manual;
-		"DEVELOPMENT_TEAM" = NMSWAPB8G9;
-		"GCC_C_LANGUAGE_STANDARD" = gnu11;
-		"INFOPLIST_FILE" = "ShareExtension/Info.plist";
-		"IPHONEOS_DEPLOYMENT_TARGET" = "12.0";
-		"LD_RUNPATH_SEARCH_PATHS" = (
-			"$(inherited)",
-			"@executable_path/Frameworks",
-			"@executable_path/../../Frameworks",
-		);
-		"MTL_ENABLE_DEBUG_INFO" = "INCLUDE_SOURCE";
-		"MTL_FAST_MATH" = YES;
-		"PRODUCT_BUNDLE_IDENTIFIER" = "io.dashwave.gitjournal.ShareExtension";
-		"PRODUCT_NAME" = "$(TARGET_NAME)";
-		"PROVISIONING_PROFILE" = "77a3e75f-6147-4ef7-85dd-83e8be00068c";
-		"PROVISIONING_PROFILE_SPECIFIER" = "";
-		"SKIP_INSTALL" = YES;
-		"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = DEBUG;
-		"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
-		"SWIFT_VERSION" = "5.0";
-		"TARGETED_DEVICE_FAMILY" = "1,2";
-	};
-	isa = XCBuildConfiguration;
-	name = Debug;
-};
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NMSWAPB8G9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dashwave.gitjournal.Shareextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		7AAD0874253F8A9F0048BC67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -707,46 +703,46 @@
 			name = Release;
 		};
 		97C147061CF9000F007C117D /* Debug */ = {
-	baseConfigurationReference = 9740EEB21CF90195004384FC;
-	buildSettings = {
-		"ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES" = YES;
-		"ASSETCATALOG_COMPILER_APPICON_NAME" = AppIcon;
-		"CLANG_ENABLE_MODULES" = YES;
-		"CODE_SIGN_ENTITLEMENTS" = "Runner/Runner.entitlements";
-		"CODE_SIGN_IDENTITY" = 4b953abffcbce8171fcfb6b5b8e317797dffe18d;
-		"CODE_SIGN_STYLE" = Manual;
-		"CURRENT_PROJECT_VERSION" = "$(FLUTTER_BUILD_NUMBER)";
-		"DEVELOPMENT_TEAM" = NMSWAPB8G9;
-		"ENABLE_BITCODE" = NO;
-		"FRAMEWORK_SEARCH_PATHS" = (
-			"$(inherited)",
-			"$(PROJECT_DIR)/Flutter",
-		);
-		"INFOPLIST_FILE" = "Runner/Info.plist";
-		"IPHONEOS_DEPLOYMENT_TARGET" = "12.0";
-		"LD_RUNPATH_SEARCH_PATHS" = (
-			"$(inherited)",
-			"@executable_path/Frameworks",
-		);
-		"LIBRARY_SEARCH_PATHS" = (
-			"$(inherited)",
-			"$(PROJECT_DIR)/Flutter",
-			"$(PROJECT_DIR)/libs",
-		);
-		"PRODUCT_BUNDLE_IDENTIFIER" = "com.dashwave.gitjournal";
-		"PRODUCT_NAME" = "$(TARGET_NAME)";
-		"PROVISIONING_PROFILE" = "55154d5e-e409-4720-b445-6428be6bfd52";
-		"PROVISIONING_PROFILE_SPECIFIER" = "";
-		"SWIFT_OBJC_BRIDGING_HEADER" = "Runner/Runner-Bridging-Header.h";
-		"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
-		"SWIFT_VERSION" = "5.0";
-		"SYSTEM_HEADER_SEARCH_PATHS" = "$(PROJECT_DIR)/libs/include/";
-		"USER_HEADER_SEARCH_PATHS" = "$(PROJECT_DIR)/../gj_common/";
-		"VERSIONING_SYSTEM" = "apple-generic";
-	};
-	isa = XCBuildConfiguration;
-	name = Debug;
-};
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = NMSWAPB8G9;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				INFOPLIST_FILE = Runner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"$(PROJECT_DIR)/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dashwave.gitjournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/include/";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../gj_common/";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
 		97C147071CF9000F007C117D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
