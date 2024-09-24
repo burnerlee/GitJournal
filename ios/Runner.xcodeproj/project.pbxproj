@@ -586,7 +586,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = io.dashwave.gitjournal.ShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dashwave.gitjournal.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
